@@ -1,4 +1,4 @@
-package com.colak.springtutorial.controller;
+package com.colak.springtutorial.controller.get;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;

@@ -2,6 +2,9 @@
 
 Example that shows how to use Swagger
 
+Also see  
+https://snowcloudbyte.medium.com/spring-boot-3-swagger-for-api-documentation-f2021dbc5b69
+
 # Swagger
 
 http://localhost:8080/swagger-ui/index.html
