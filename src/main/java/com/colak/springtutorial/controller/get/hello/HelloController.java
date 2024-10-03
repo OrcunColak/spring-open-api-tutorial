@@ -1,4 +1,4 @@
-package com.colak.springtutorial.controller.get;
+package com.colak.springtutorial.controller.get.hello;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
@@ -11,24 +11,19 @@ import org.springframework.web.ErrorResponse;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+// Controller that returns custom type
 @RestController
 @Tag(name = "HelloController API's", description = "Examples for operations like create/update/delete")
 public class HelloController {
 
-    @Operation
+    @Operation(summary = "Say Hello API")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Create a new project",
-                    content = {@Content(
-                            schema = @Schema(implementation = HelloResponse.class)
-                    )}),
+                    content = {@Content(schema = @Schema(implementation = HelloResponse.class))}),
             @ApiResponse(responseCode = "400", description = "Issue with Request",
-                    content = {@Content(
-                            schema = @Schema(implementation = ErrorResponse.class)
-                    )}),
+                    content = {@Content(schema = @Schema(implementation = ErrorResponse.class))}),
             @ApiResponse(responseCode = "500", description = "Internal Server Error",
-                    content = {@Content(
-                            schema = @Schema(implementation = ErrorResponse.class)
-                    )})
+                    content = {@Content(schema = @Schema(implementation = ErrorResponse.class))})
     })
     @Parameter(name = "no arguments required ", description = "")
     @GetMapping("/sayhello")

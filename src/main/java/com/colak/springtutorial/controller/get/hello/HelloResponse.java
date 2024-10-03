@@ -1,4 +1,4 @@
-package com.colak.springtutorial.controller.get;
+package com.colak.springtutorial.controller.get.hello;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
